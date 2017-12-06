@@ -82,6 +82,24 @@ taalkeuze();
 			<li><a href="https://phaser.io">Maak je eigen spelletjes!</a></li>
  			<li><a href="http://www.spelletjes.nl/">andere spelletjes!</a></li>
 		</ul>
+        <div style="text-align:right;">
+		<select id="sorteren op" onchange="sorterenop()">
+	<option>sorteren op</option>
+	<option value="meest gespeeld">meest gespeeld</option>
+	<option value="recentst">recentst</option>
+	<option value="oudst">oudst</option>
+	
+</select>
+
+<script>
+function sorterenop() {
+	var b=document.getElementById("taalkeuze").value;
+	if (b=="meest gespeeld") {window.open("_self")};
+
+}
+sorterenop();
+</script>
+
 
 		<h1> populair</h1>
 		<a href="file:///Users/magibabr/Documents/Gilles_programs/spaceI.html">
