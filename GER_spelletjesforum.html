@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<title>SpelletjesForum_GER</title>
+		<style>
+			body {
+				background-image: ; 
+				 }
+			h1 	{ color: rgb(0,255,0);
+				  text-align: center;
+				  border-bottom: 2px dotted green;
+				  }
+			h2 {  color: rgb(0,255,0); }
+			p 	{ font-size: 20px ;  
+				   }
+		</style>
+
+<div style="text-align:right;">
+	<form onsubmit="myFunction()">
+		<input type="text" id="myText" value="">
+	
+<p id="demo"></p>
+
+	</form>	
+
+<script>
+     function myFunction() {
+    var x = document.getElementById("myText").value;
+    
+    if (x=="pacman") {window.open("file:///Users/magibabr/Documents/Gilles_programs/Pac-Man_GER.html")};
+    if (x=="donkey kong") {window.open("file:///Users/magibabr/Documents/Gilles_programs/info_donkeyKong_GER.html")};
+    
+    if (x=="curveball") {window.open("file:///Users/magibabr/Documents/Gilles_programs/Info_curveball_GER.html")};
+    if (x=="asteroids") {window.open("file:///Users/magibabr/Documents/Gilles_programs/asteroids_info_GER.html")};
+    if (x=="space invaders") {window.open("file:///Users/magibabr/Documents/Gilles_programs/space_Invaders_I_GER.html")};
+    if (x!="space invaders","asteroids","curveball","donkey kong","pacman") {window.open("file:///Users/magibabr/Documents/Gilles_programs/niksgevonden_GER.html")};
+    //document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+<select id="taalkeuze" onchange="taalkeuze()">
+	<option>wähle Sprache</option>
+	<option value="NED">NED</option>
+	<option value="ENG">ENG</option>
+	<option value="GER">GER</option>
+	<option value="FRA">FRA</option>
+</select>
+
+<script>
+function taalkeuze() {
+	var t=document.getElementById("taalkeuze").value;
+	if (t=="ENG") {window.open("file:///Users/magibabr/Documents/Gilles_programs/translate_eng.html","_self")};
+	if (t=="GER") {window.open("file:///Users/magibabr/Documents/Gilles_programs/GER_spelletjesforum.html","_self")};
+	if (t=="NED") {window.open("file:///Users/magibabr/Documents/Gilles_programs/spelletjesforum.html","_self")};
+	if (t=="FRA") {window.open("file:///Users/magibabr/Documents/Gilles_programs/spelletjesforum_FRA.html","_self")};
+	console.log(t);
+	console.log (typeof (t));
+}
+taalkeuze();
+</script>
+
+
+
+
+
+		
+</div>
+
+
+
+    
+
+</script>
+	</head>
+	<body>
+		<h1><img src="gameboy.png"  style="width:70px;height:65px">SpielForum<img src="gameboy.png"  style="width:70px;height:65px">
+		<img src="">
+		<p>Hier finden Sie die besten Arcade-Spiele der Vergangenheit!!!</p>
+		<h2>Aber zuerst einige interessante Links.</h2>
+		<ul>
+			<li><a href="https://phaser.io">Mach deine eigenen Spiele!</a></li>
+ 			<li><a href="http://www.spelletjes.nl/">Andere Spiele!</a></li>
+		</ul>
+
+		<h1> beliebt</h1>
+		<a href="file:///Users/magibabr/Documents/Gilles_programs/space_Invaders_I_GER.html">
+  <img src="https://i.pinimg.com/736x/39/f1/a1/39f1a14fea8a87d0f68f92ad6e221e60--space-invaders-pixel-art.jpg"  style="width:200px;height:300px">
+
+        <a href="file:///Users/magibabr/Documents/Gilles_programs/asteroids_info_GER.html">
+  <img src="http://www.geek.com/wp-content/uploads/2009/07/asteroids.jpg" style="width:200px;height:300px">
+
+        <a href="file:///Users/magibabr/Documents/Gilles_programs/Info_curveball_GER.html">
+  <img src="http://cache.hackedfreegames.com/uploads/games/pictures/517/p750ER3RKCZ1G.jpg" style="width:200px;height:300px">
+
+        <a href="file:///Users/magibabr/Documents/Gilles_programs/info_donkeyKong_GER.html">
+  <img src="http://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/virtual_console_nintendo_3ds_7/SI_3DSVC_DonkeyKong.jpg" style="width:200px;height:300px">
+
+        <a href="file:///Users/magibabr/Documents/Gilles_programs/Pac-Man_GER.html">
+  <img src="https://upload.wikimedia.org/wikipedia/en/5/59/Pac-man.png" style="width:200px;height:300px">
+
+
+
+
+</a>
+	</body>
+</html>
